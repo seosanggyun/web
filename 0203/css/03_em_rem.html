@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .em {
+      font-size: 1.5em;
+    }
+
+    .rem {
+      font-size: 1.5rem;
+    }
+
+    .box {
+      width: 50vw;
+      height: 100px;
+      background-color: rgba(190, 127, 11, 0.466);
+    }
+
+    .parent {
+      width: 1000px;
+      height: 300px;
+      background-color: gray;
+    }
+
+    .child {
+      width: 50%;
+      height: 100px;
+      background-color: blue;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="box">
+      vw 체크
+    </div>
+  </div>
+  <hr>
+  <div class="child">
+    % 체크
+  </div>
+  <ul class="em">
+    <li class="em">1.5em</li>
+    <li class="rem">1.5rem</li>
+    <li>no class</li>
+  </ul>
+</body>
+</html>

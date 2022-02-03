@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 공통 스타일링 */
+    div {
+      box-sizing: border-box;
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+    }
+
+    .parent {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 100px auto;
+    }
+
+    .brother {
+      background-color: crimson;
+    }
+    
+    .sibling {
+      background-color: deepskyblue;
+    }
+
+    /* 개별 클래스 */
+    .absolute {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+    }
+
+    .relative {
+      position: relative;
+      top: 50px;
+      left: 50px;
+    }
+
+    .fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 0;
+      right: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="sticky">
+      sticky
+    </div>
+    <div class="fixed">
+      fixed
+    </div>
+  </div>
+  
+  <!-- 기본 확인 -->
+  <div class="parent">
+    <div class="brother">형</div>
+    <div class="sibling">동생</div>
+  </div>
+  <hr>
+  
+  <!-- absolute 확인 -->
+  <div class="parent">
+    <div class="absolute brother">형</div>
+    <div class="sibling">동생</div>
+  </div>
+  <hr>
+
+  <!-- relative 확인 -->
+  <div class="parent">
+    <div class="relative brother">형</div>
+    <div class="sibling">동생</div>
+  </div>
+</body>
+</html>
