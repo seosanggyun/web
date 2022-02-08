@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            /* 10rem => 160px (root -> 16px) */
+            width: 10rem;
+            height: 10rem;
+            border: 1px solid black;
+            background-color: crimson;
+        }
+
+        .box2 {
+            /* 10rem => 160px (root -> 16px) */
+            width: 20rem;
+            height: 10rem;
+            border: 1px solid black;
+            background-color: cornflowerblue;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- clearfix 
+    1. float 요소의 부모로 div!
+    2. 부모에게 .clearfix
+    -->
+    <div class="clearfix">
+        <div class="box1 left">box1</div>
+    </div>
+    <div class="box2">box2</div>
+</body>
+</html>
