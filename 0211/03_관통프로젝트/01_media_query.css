@@ -1,0 +1,78 @@
+/* 가로 모드 (너비 > 높이) */
+@media (orientation: landscape) {
+  h1 {
+    color: green;
+  }
+}
+
+/* 세로 모드 (높이 > 너비) */
+@media (orientation: portrait) {
+  h1 {
+    color: red;
+  }
+}
+
+/* Media type : all, print, screen, speech */
+@media only print {
+  * {
+    color: black !important;
+  }
+}
+
+/* 특정 너비 */
+@media (width: 300px) {
+  h2 {
+    color: cadetblue;
+  }
+}
+
+@media (min-width: 700px) {
+  h3 {
+    color: darkkhaki;
+  }
+}
+
+@media (max-width: 600px) {
+  h3 {
+    color: fuchsia;
+  }
+}
+
+@media (min-width: 500px) {
+  h4 {
+    color: red;
+  }
+}
+
+@media (min-width: 600px) {
+  h4 {
+    color: orange;
+  }
+}
+
+@media (min-width: 700px) {
+  h4 {
+    color: yellow;
+  }
+}
+
+@media (min-width: 800px) {
+  h4 {
+    color: green;
+  }
+}
+
+/* 조건 */
+/* 두 조건이 모두 만족할 때 (and) */
+@media (max-height: 500px) and (max-width: 500px) {
+  h5 {
+    color: rosybrown;
+  }
+}
+
+/* 두 조건 중 하나라도 만족할 때 (or) */
+@media (max-height: 500px), (max-width: 500px) {
+  p {
+    color: palegreen;
+  }
+}

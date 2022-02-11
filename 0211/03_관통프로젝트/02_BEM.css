@@ -1,0 +1,21 @@
+/* Flex */
+.main-nav {
+  display: flex;
+  /* main 축 : row */
+  justify-content: space-between;
+}
+
+.main-nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  margin: 0 .5rem;
+  list-style: none;
+}
+
+.main-nav__link {
+  text-decoration: none;
+}

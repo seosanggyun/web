@@ -1,0 +1,10 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: ; */
+  padding: 3rem;
+  margin: 1rem;
+  background-color: antiquewhite;
+  color: aqua;
+}
